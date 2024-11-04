@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisp AI</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main-init.js"></script>
+</head>
+
+<body>
+    <div id="top-section">
+        <h1>WispAI</h1>
+        <button id="sign-out-button">Sign Out</button>
+    </div>
+    <hr>
+    <div class="wrapper">
+        <div class="spinner"></div>
+        <label for="campaigns-dropdown" class="campaigns">Your Campaigns</label>
+        <select name="campaigns" id="campaigns-dropdown" class="campaigns">
+        </select>
+        <div id="message-range-inputs">
+            <div class="input-container">
+                <label for="min-messages">Min. Messages</label>
+                <input id="min-messages" class="message-input" type="number" placeholder="Min Messages" value="50">
+            </div>
+            <div class="input-container">
+                <label for="max-messages">Max. Messages</label>
+                <input id="max-messages" class="message-input" type="number" placeholder="Max Messages" value="50">
+            </div>
+        </div>
+        <button id="start-campaign-button" class="campaigns">Start Campaign</button>
+        <p id="info"></p>
+    </div>
+
+    <script src="main-script.js"></script>
+</body>
+
+</html>

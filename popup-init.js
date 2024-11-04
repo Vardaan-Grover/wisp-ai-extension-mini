@@ -1,0 +1,1 @@
+function init() { chrome.runtime.sendMessage({ message: "is_user_signed_in" }, (e => { "success" === e.message && window.location.replace("./main.html") })) } init();

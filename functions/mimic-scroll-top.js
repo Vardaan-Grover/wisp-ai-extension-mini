@@ -1,0 +1,1 @@
+async function mimicScrollTop() { const o = await getCurrentCampaignTabId(); chrome.debugger.sendCommand({ tabId: o }, "Runtime.evaluate", { expression: 'window.scrollBy({\n        top: -window.scrollY,\n        behavior: "smooth"\n    })' }) } self.mimicScrollTop = mimicScrollTop;

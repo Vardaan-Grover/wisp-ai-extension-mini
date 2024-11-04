@@ -1,0 +1,1 @@
+async function clickMessageButton() { const e = await getCurrentCampaignTabId(); chrome.debugger.sendCommand({ tabId: e }, "Runtime.evaluate", { expression: 'const messageButton = Array.from(document.querySelectorAll(\'div[role="button"]\')).find((element) => element.textContent.trim() === "Message");\n\n    messageButton.click()' }) }

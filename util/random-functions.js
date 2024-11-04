@@ -1,0 +1,1 @@
+function calculateRandomNumber(a, e) { return Math.random() * (e - a) + a } self.calculateRandomNumber = calculateRandomNumber;

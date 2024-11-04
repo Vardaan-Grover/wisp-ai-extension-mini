@@ -1,0 +1,1 @@
+function delay(e) { return new Promise((l => setTimeout(l, e))) } self.delay = delay;

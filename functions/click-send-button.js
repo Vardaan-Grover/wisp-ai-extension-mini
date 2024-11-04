@@ -1,0 +1,1 @@
+async function clickSendButton() { const e = Array.from(document.querySelectorAll('div[role="button"]')).filter((e => "send" === e.textContent.trim().toLowerCase()))[0].getBoundingClientRect(), t = e.x + e.width / 2, n = e.y + e.height / 2; chrome.runtime.sendMessage({ message: "click_element", x: t, y: n }) }

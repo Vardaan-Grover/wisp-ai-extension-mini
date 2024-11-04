@@ -1,0 +1,1 @@
+async function clickInput() { const e = await getCurrentCampaignTabId(); chrome.debugger.sendCommand({ tabId: e }, "Runtime.evaluate", { expression: "const inputElement = document.querySelector('div[aria-label=\"Message\"]');\n    inputElement.click();" }) } self.clickInput = clickInput;
